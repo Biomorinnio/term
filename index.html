@@ -40,7 +40,17 @@
 
     <div id="overlay">
       <div id="popup">
-      
+        <svg class="popup__close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 18L18.7279 5.27208" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 5L18.7279 17.7279" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          
+        <h2 class="popup__title">Оставить заявку</h2>
+          <label for="form__name">Ваше имя</label>
+          <input type="text" name="form__name" class="popup__form-input" >
+          <label for="form__tel">Ваш телефон</label>
+          <input type="tel"  name="phone" placeholder="+7" class="popup__form-input phone-mask"/>
+          <button class="popup__form-btn">ОТПРАВИТЬ</button>
       </div>
     </div>
   
@@ -53,15 +63,15 @@
           </a>
           <ul class="header__list none">
               <li class="header__item">
-                <a href="#" class="header__link">О нас</a>
+                <a href="#features" class="header__link">О нас</a>
               </li>
             
               <li class="header__item">
-                <a href="#" class="header__link">Тарифы</a>
+                <a href="#tariffs" class="header__link">Тарифы</a>
               </li>
              
               <li class="header__item">
-                <a href="#" class="header__link">Контакты</a>
+                <a href="#footer" class="header__link">Контакты</a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__link">Для компаний</a>
@@ -97,7 +107,7 @@
               </a>
             </li>
             <li class="header__soc-item">
-              <button class="header__soc-btn">
+              <button class="header__soc-btn popup__btn">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 10H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M10 15L10 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -112,20 +122,18 @@
       <menu class="header__menu mobile">
        
         <nav class="header__nav">
-          <a class="logo">
-            <img src="img/header__logo.svg" alt="" class="logo__img">
-          </a>
-          <ul class="header__list none">
+          
+          <ul class="header__list ">
               <li class="header__item">
-                <a href="#" class="header__link">О нас</a>
+                <a href="#features" class="header__link">О нас</a>
               </li>
             
               <li class="header__item">
-                <a href="#" class="header__link">Тарифы</a>
+                <a href="#tariffs" class="header__link">Тарифы</a>
               </li>
              
               <li class="header__item">
-                <a href="#" class="header__link">Контакты</a>
+                <a href="#footer" class="header__link">Контакты</a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__link">Для компаний</a>
@@ -135,12 +143,8 @@
               </li>
           </ul>
         </nav>
-        <ul class="header__soc-list none">
-          <li class="header__soc-item">
-            <a href="tel:+79233455634" class="header__soc-link">
-              +7(923) 345-56-34
-            </a>
-          </li>
+        <ul class="header__soc-list ">
+          
           <li class="header__soc-item">
             <a href="https://t.me/polinazimnukhova" class="header__soc-link">
               <img
@@ -166,7 +170,7 @@
           </li>
           
         </ul>
-        <button class="header__soc-btn">
+        <button class="header__soc-btn popup__btn">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 10H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10 15L10 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -178,7 +182,7 @@
     </header>
  
 
-    <main>
+    <main class="main">
 
       <section class="welcome">
         <img src="img/welcome__back.jpg" alt="" class="welcome__back-img">
@@ -190,9 +194,9 @@
             <div class="welcome__descr">
               <span class="welcome__descr-text">Сервис для удобной демонстрации портфеля экскурсовода прямо с телефона, геймификации экскурсий, получения отзывов и чаевых</span>
               <div class="welcome__descr-btns">
-                <button class="welcome__descr-btn">Присоединиться</button>
-                <a href="#" class="welcome__btn-link"><img src="img/youtube.png" alt="" class="welcome__btn-img">
-                  Посмотрите как<br/> работает за 30 сек</a>
+                <button class="welcome__descr-btn popup__btn">Присоединиться</button>
+                <a href="#video" class="welcome__btn-link"><img src="img/youtube.png" alt="" class="welcome__btn-img">
+                  Посмотрите, как<br/> работает за 30 сек</a>
               </div>
               <ul class="welcome__descr-list">
                 <li class="welcome__descr-item">
@@ -250,13 +254,13 @@
         </div>
       </section>
 
-      <!-- <section class="video">
-        
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fnTA_AGkdF0?si=omdNOLsbazEjLvAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       
-      </section> -->
+      <section class="video" id="video">
 
-      <section class="features">
+          <img src="img/video__img.png" alt="" class="video__img">
+        
+      </section>
+
+      <section class="features" id="features">
         <div class="container features__inner">
           <h2 class="features__title">11 фишек сервиса Tellmenator</h2>
           <ul class="features__list">
@@ -352,7 +356,8 @@
               <img src="img/features-11.webp" alt="" class="features__item-img">
             </li>
           </ul>
-          <button class="features__btn">Присоединиться</button>
+          <button class="features__btn-open mobile">Смотреть еще</button>
+          <button class="features__btn popup__btn">Присоединиться</button>
         </div>
       </section>
 
@@ -380,8 +385,8 @@
             </li>
           </ul>
           <div class="welcome__descr-btns">
-            <button class="welcome__descr-btn">Присоединиться</button>
-            <a href="#" class="welcome__btn-link"><img src="img/youtube.png" alt="" class="welcome__btn-img">
+            <button class="welcome__descr-btn popup__btn">Присоединиться</button>
+            <a href="#video" class="welcome__btn-link"><img src="img/youtube.png" alt="" class="welcome__btn-img">
               Посмотрите, как это работает</a>
           </div>
         </div>
@@ -406,13 +411,13 @@
             </li>
          
             <li class="how__item">
-              <img src="img/how-3.png" alt="" class="how__item-img">
+              <img src="img/youtube.png" alt="" class="how__item-img">
               <h4 class="how__item-title">Начать показ</h4>
               <p class="how__item-text">Начните показ, переключая материалы у себя на телефоне – они автоматически сразу переключаются у всех гостей синхронно</p>
             </li>
             <li class="how__item">
-
-              <img src="img/how__arrow-2.png" alt="" class="how__item-img">
+              <img src="img/how__arrow-1.png" alt="" class="how__item-img">
+              <img src="img/how__arrow-2.png" alt="" class="how__item-img none">
             </li>
 
             <li class="how__item">
@@ -430,7 +435,7 @@
             </li>
            
             <li class="how__item">
-              <img src="img/how-3.png" alt="" class="how__item-img">
+              <img src="img/youtube.png" alt="" class="how__item-img">
               <h4 class="how__item-title">И конечно, чаевые</h4>
               <p class="how__item-text">Вы потрудились, отлично подготовились и провели мероприятие — многие это ценят и оставляют чаевые</p>
             </li>
@@ -438,13 +443,14 @@
           
             
           </ul>
-          <button class="how__btn">Присоединиться</button>
+          <button class="how__btn popup__btn">Присоединиться</button>
         </div>
       </section>
 
       <section class="companies">
         <div class="container companies__inner">
-          <img src="img/companies__back.png" alt="" class="companies__inner-img">
+          <img src="img/companies__back.png" alt="" class="companies__inner-img none">
+          <img src="img/companies__back-mobile.png" alt="" class="companies__inner-img mobile">
           <div class="companies__content">
             <img src="img/welcome__content-2.webp" alt="" class="companies__content-img">
             <img src="img/welcome__content-1.webp" alt="" class="companies__content-img">
@@ -496,10 +502,17 @@
 
         <div class="container">
           <div class="feedback__inner">
-            <h2 class="feedback__title"></h2>
+            <h2 class="feedback__title">Что говорят гиды,<br/>
+              которые уже с нами
+              </h2>
             <div class="feedback__btns">
-              <div class="swiper-button-prev feedback"></div>
-              <div class="swiper-button-next feedback"></div>
+              <div class="swiper-button-prev feedback">
+                <img src="img/swiper__button.svg" alt="">
+              </div>
+              <div class="swiper-button-next feedback">
+                <img src="img/swiper__button.svg" alt="">
+              </div>
+            
             </div>
           </div>
           <div class="swiper-feedback">
@@ -507,22 +520,28 @@
             <div class="swiper-wrapper">
          
               <div class="swiper-slide">
-                <img src="img/feedback-1.webp" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-1.jpg" alt="" class="swiper-feedback__img">
               </div>
               <div class="swiper-slide">
-                <img src="img/feedback-2.png" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-2.jpg" alt="" class="swiper-feedback__img">
               </div>
               <div class="swiper-slide">
-                <img src="img/feedback-3.png" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-3.jpg" alt="" class="swiper-feedback__img">
               </div>
               <div class="swiper-slide">
-                <img src="img/feedback-4.webp" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-4.jpg" alt="" class="swiper-feedback__img">
               </div>
               <div class="swiper-slide">
-                <img src="img/feedback-5.webp" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-5.jpg" alt="" class="swiper-feedback__img">
               </div>
               <div class="swiper-slide">
-                <img src="img/feedback-6.webp" alt="" class="swiper-feedback__img">
+                <img src="img/feedback-6.jpg" alt="" class="swiper-feedback__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/feedback-7.jpg" alt="" class="swiper-feedback__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/feedback-8.jpg" alt="" class="swiper-feedback__img">
               </div>
                
           
@@ -530,15 +549,15 @@
        
      
           </div>
-
           <div class="swiper-pagination feedback"></div>
+
 
      
          
         </div>
       </section>
 
-      <section class="tariffs">
+      <section class="tariffs" id="tariffs">
         <div class="container">
           <div class="tariffs__inner">
             <h2 class="tariffs__title">Тарифы</h2>
@@ -552,33 +571,33 @@
             <li class="tariffs__item">
               <h4 class="tariffs__item-title">Старт</h4>
               <p class="tariffs__item-text">Тариф тех, кто проводит туры довольно редко</p>
-              <br>
-              <h5 class="tariffs__item-subtitle">✌️ 2 тура в месяц</h5>
-              <h5 class="tariffs__item-subtitle">490<g>  руб/мес</g></h5>
-              <button class="tariffs__item-btn">Присоединиться</button>
-              <a href="#" class="tariffs__item-link">Задать вопрос</a></li>
+              <hr>
+              <h5 class="tariffs__item-subtitle"><ot>✌️</ot> 2 тура в месяц</h5>
+              <h5 class="tariffs__item-price">490<g>  руб/мес</g></h5>
+              <button class="tariffs__item-btn popup__btn">Присоединиться</button>
+              <a href="#" class="tariffs__item-link popup__btn">Задать вопрос</a></li>
             <li class="tariffs__item">
               <h4 class="tariffs__item-title">Стандарт</h4>
               <p class="tariffs__item-text">Для эпизодических экскурсий</p>
-              <br>
-              <h5 class="tariffs__item-subtitle">✌️ 5 туров в месяц</h5>
-               <h5 class="tariffs__item-subtitle">990<g>  руб/мес</g></h5>
-              <button class="tariffs__item-btn">Присоединиться</button>
-              <a href="#" class="tariffs__item-link">Задать вопрос</a></li>
+              <hr>
+              <h5 class="tariffs__item-subtitle"><ot>✌️</ot> 5 туров в месяц</h5>
+               <h5 class="tariffs__item-price">990<g>  руб/мес</g></h5>
+              <button class="tariffs__item-btn popup__btn">Присоединиться</button>
+              <a href="#" class="tariffs__item-link popup__btn">Задать вопрос</a></li>
             <li class="tariffs__item">
               <h4 class="tariffs__item-title">Безлимит</h4>
               <p class="tariffs__item-text">Для тех, кто проводит экскурсии регулярно</p>
-              <br>
-              <h5 class="tariffs__item-subtitle">👑 Без ограничений</h5>
-               <h5 class="tariffs__item-subtitle">1990<g>  руб/мес</g></h5>
-              <button class="tariffs__item-btn">Присоединиться</button>
-              <a href="#" class="tariffs__item-link">Задать вопрос</a></li>
+              <hr>
+              <h5 class="tariffs__item-subtitle"><ot>👑</ot> Без ограничений</h5>
+               <h5 class="tariffs__item-price">1990<g>  руб/мес</g></h5>
+              <button class="tariffs__item-btn popup__btn">Присоединиться</button>
+              <a href="#" class="tariffs__item-link popup__btn">Задать вопрос</a></li>
           </ul>
         </div>
       </section>
 
       <section class="faq">
-        <div class="container">
+        <div class="container faq__inner">
           <h2 class="faq__title">Вопросы и ответы</h2>
 
           <button class="accordion">
@@ -610,27 +629,32 @@
             <p class="accordion__panel-text">Мы рекомендуем использовать изображения в формате jpg c вертикальной ориентацией</p>
           </div>
      
-          <button class="faq__btn">Задать вопрос</button>
+          <button class="faq__btn popup__btn">Задать вопрос</button>
         </div>
       </section>
 
       <section class="join">
-        <div class="container join__inner">
-          <div class="join__descr">
-            <h3 class="join__descr-title">Присоединяйтесь к нам,<br/> чтобы облегчить свой бизнес</h3>
-            <button class="join__descr-btn">Присоединиться</button>
-          </div>
-          <div class="join__content">
-            <img src="" alt="" class="join__content-img">
-            <img src="" alt="" class="join__content-img">
+        <div class="container ">
+          <div class="join__inner">
+            <div class="join__descr">
+              <h3 class="join__descr-title">Присоединяйтесь к нам,<br/> чтобы облегчить свой бизнес</h3>
+              <button class="join__descr-btn popup__btn">Присоединиться</button>
+            </div>
+            <div class="join__content">
+              <img src="img/join__content.png" alt="" class="join__content-img">
+             
+            </div>
           </div>
         </div>
       </section>
 
       <section class="tale">
         <div class="container">
-          <h3 class="tale__title">Скажите мне, и я забуду, покажите мне, и я, наверное, запомню, вовлеките меня, и я пойму.</h3>
-          <h5 class="tale__subtitle">Китайская поговорка</h5>
+          <div class="tale__inner">
+            <img src="img/tale__back.png" alt="" class="tale__inner-img">
+            <h3 class="tale__title">Скажите мне, и я забуду, покажите мне, и я, наверное, запомню, вовлеките меня, и я пойму.</h3>
+            <h5 class="tale__subtitle">Китайская поговорка</h5>
+          </div>
         </div>
       </section>
 
@@ -645,37 +669,38 @@
           <li class="footer__soc-item">
             <a href="https://t.me/polinazimnukhova" class="footer__item-link">
                 
-              <img src="img/telegram-yellow.svg" alt="телеграм">
+              <img src="img/footer__telegram.svg" alt="телеграм">
             </a>
             <span class="footer__info-title">Написать в Telegram</span>
           </li>
           <li class="footer__soc-item">
             <a href="https://t.me/polinazimnukhova" class="footer__item-link">
               
-              <img src="img/whatsapp-yellow.svg" alt="whatsapp">
+              <img src="img/footer__whatsapp.svg" alt="whatsapp">
             </a>
             <span class="footer__info-title">Написать в WhatsApp</span>
           </li>
         </ul>
         <ul class="footer__info-list">
           <li class="footer__info-item">
-            <address class="footer__info-title">Москва, ул. Демидова, 17</address>
             <p class="footer__item-text">Адрес</p>
+            <address class="footer__info-title">Москва, ул. Демидова, 17</address>
           </li>
           <li class="footer__info-item">
-            <a href="tel:+72992333432" class="footer__info-title">+7 (299) 233 - 34 - 32 </a>
             <p class="footer__item-text">Телефон</p>
+            <a href="tel:+72992333432" class="footer__info-title">+7 (299) 233 - 34 - 32 </a>
           </li>
           <li class="footer__info-item">
-            <a href="mailto:example@gmail.com" class="footer__info-title">example@gmail.com </a>
             <p class="footer__item-text">Имейл</p>
+            <a href="mailto:example@gmail.com" class="footer__info-title">example@gmail.com </a>
           </li>
         </ul>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae4b0980087ff7d5a742ec423c6aa97d0d3fa87ae15b558299f97e5497f797529&amp;source=constructor" width="1160" height="400" frameborder="0"></iframe>
         <ul class="footer__rights-list">
           <li class="footer__rights-item">
-            <p class="footer__item-text">ООО “Швейгрупп”</p>
-            <p class="footer__item-text">ИНН/КПП 919847397392789</p>
-            <p class="footer__item-text">ОГРН 12364773829</p>
+            <p class="footer__item-text">ИП Ларин Владимир Андреевич</p>
+            <p class="footer__item-text">ИНН 34567894567867</p>
+            <p class="footer__item-text">ОГРНИП 12364773829</p>
           </li>
         </ul>
       </div>
@@ -693,10 +718,10 @@
               <a href="#" class="footer__nav-link">Для музеев</a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Оферта</a>
+              <a href="offer.html" class="footer__nav-link">Оферта</a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Политика конфиденциальности</a>
+              <a href="policy.html" class="footer__nav-link">Политика конфиденциальности</a>
             </li>
           </ul>
         </nav>

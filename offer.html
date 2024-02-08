@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta
+      name="description"
+      content="Tellmenator"
+    />
+
+    <meta
+      name="keywords"
+      content="Tellmenator, Business, мерч"
+    />
+
+    <title>Tellmenator</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="fonts/Gilroy/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body>
+
+    <div id="shadow">
+
+    </div>
+
+    <div id="overlay">
+      <div id="popup">
+        <svg class="popup__close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 18L18.7279 5.27208" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 5L18.7279 17.7279" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          
+        <h2 class="popup__title">Оставить заявку</h2>
+          <label for="form__name">Ваше имя</label>
+          <input type="text" name="form__name" class="popup__form-input" >
+          <label for="form__tel">Ваш телефон</label>
+          <input type="tel"  name="phone" placeholder="+7" class="popup__form-input phone-mask"/>
+          <button class="popup__form-btn">ОТПРАВИТЬ</button>
+      </div>
+    </div>
+
+<header class="header">
+    <div class="container header__inner">
+
+      <nav class="header__nav">
+        <a class="logo">
+          <img src="img/header__logo.svg" alt="" class="logo__img">
+        </a>
+        <ul class="header__list none">
+            <li class="header__item">
+              <a href="#features" class="header__link">О нас</a>
+            </li>
+          
+            <li class="header__item">
+              <a href="#tariffs" class="header__link">Тарифы</a>
+            </li>
+           
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Для компаний</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Для музеев</a>
+            </li>
+        </ul>
+      </nav>
+      <ul class="header__soc-list none">
+          
+          <li class="header__soc-item">
+            <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+              <img
+                src="img/whatsapp.svg"
+                alt="телеграм"
+                class="header__soc-icon"
+              />
+            </a>
+          </li>
+          <li class="header__soc-item">
+            <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+              <img
+                src="img/telegram.svg"
+                alt="whatsapp"
+                class="header__soc-icon"
+              />
+            </a>
+          </li>
+          <li class="header__soc-item">
+            <a href="mailto:hello@tellmenator.com" class="header__soc-link">
+              <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+            </a>
+          </li>
+          <li class="header__soc-item">
+            <button class="header__soc-btn popup__btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 10H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 15L10 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                  
+              Присоединиться
+            </button>
+          </li>
+      </ul>
+      <img class="header__burger mobile" src="img/burger.svg" alt="бургер меню">
+
+    </div>
+    <menu class="header__menu mobile">
+     
+      <nav class="header__nav">
+        <a class="logo">
+          <img src="img/header__logo.svg" alt="" class="logo__img">
+        </a>
+        <ul class="header__list none">
+            <li class="header__item">
+              <a href="#features" class="header__link">О нас</a>
+            </li>
+          
+            <li class="header__item">
+              <a href="#tariffs" class="header__link">Тарифы</a>
+            </li>
+           
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Для компаний</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Для музеев</a>
+            </li>
+        </ul>
+      </nav>
+      <ul class="header__soc-list none">
+        <li class="header__soc-item">
+          <a href="tel:+79233455634" class="header__soc-link">
+            +7(923) 345-56-34
+          </a>
+        </li>
+        <li class="header__soc-item">
+          <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+            <img
+              src="img/whatsapp.svg"
+              alt="телеграм"
+              class="header__soc-icon"
+            />
+          </a>
+        </li>
+        <li class="header__soc-item">
+          <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+            <img
+              src="img/telegram.svg"
+              alt="whatsapp"
+              class="header__soc-icon"
+            />
+          </a>
+        </li>
+        <li class="header__soc-item">
+          <a href="mailto:hello@tellmenator.com" class="header__soc-link">
+            <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+          </a>
+        </li>
+        
+      </ul>
+      <button class="header__soc-btn popup__btn">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 10H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 15L10 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>                  
+        Присоединиться
+      </button>
+   
+    </menu>
+</header>
+
+
+  <main>
+
+    <section class="offer">
+        <div class="container">
+            <h1 class="offer__title">Оферта</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo blanditiis necessitatibus est cumque temporibus ex eligendi, exercitationem quibusdam ut! Iure repudiandae laborum, amet quibusdam hic eveniet deserunt ea neque omnis consequuntur mollitia. Asperiores a earum dolorem porro error esse ab deleniti ea est cupiditate, unde inventore aliquid recusandae sint maxime nisi vitae tempore minima voluptatibus excepturi. Cumque esse voluptas assumenda ipsam accusamus ab commodi non, adipisci vero perferendis facilis voluptate amet placeat enim eos ad consectetur maiores. Doloremque ratione tempore adipisci ut modi, natus, non nobis pariatur ipsum delectus ab. Nemo accusamus ut dolor iste nulla voluptates corporis incidunt quaerat?</p>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    
+  
+    <div class="container">
+      <h2 class="footer__title">Контакты</h2>
+      <ul class="footer__soc-list">
+        <li class="footer__soc-item">
+          <a href="https://t.me/polinazimnukhova" class="footer__item-link">
+              
+            <img src="img/footer__telegram.svg" alt="телеграм">
+          </a>
+          <span class="footer__info-title">Написать в Telegram</span>
+        </li>
+        <li class="footer__soc-item">
+          <a href="https://t.me/polinazimnukhova" class="footer__item-link">
+            
+            <img src="img/footer__whatsapp.svg" alt="whatsapp">
+          </a>
+          <span class="footer__info-title">Написать в WhatsApp</span>
+        </li>
+      </ul>
+      <ul class="footer__info-list">
+        <li class="footer__info-item">
+          <p class="footer__item-text">Адрес</p>
+          <address class="footer__info-title">Москва, ул. Демидова, 17</address>
+        </li>
+        <li class="footer__info-item">
+          <p class="footer__item-text">Телефон</p>
+          <a href="tel:+72992333432" class="footer__info-title">+7 (299) 233 - 34 - 32 </a>
+        </li>
+        <li class="footer__info-item">
+          <p class="footer__item-text">Имейл</p>
+          <a href="mailto:example@gmail.com" class="footer__info-title">example@gmail.com </a>
+        </li>
+      </ul>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae4b0980087ff7d5a742ec423c6aa97d0d3fa87ae15b558299f97e5497f797529&amp;source=constructor" width="1160" height="400" frameborder="0"></iframe>
+      <ul class="footer__rights-list">
+        <li class="footer__rights-item">
+          <p class="footer__item-text">ИП Ларин Владимир Андреевич</p>
+          <p class="footer__item-text">ИНН 34567894567867</p>
+          <p class="footer__item-text">ОГРНИП 12364773829</p>
+        </li>
+      </ul>
+    </div>
+    <hr/>
+    <div class="container footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#showroom" class="footer__nav-link">Для гидов</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Для тур. операторов</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Для музеев</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="offer.html" class="footer__nav-link">Оферта</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="policy.html" class="footer__nav-link">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__reward">
+        <img src="img/footer__icon.svg" alt="" class="footer__reward-img">
+        <p class="footer__reward-text">Участник инновационного кластера</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
