@@ -107,10 +107,6 @@ popupCloseBtn.addEventListener('click', ()=>{
 })
 
 
-setTimeout(()=>{
-  document.querySelector('.video').innerHTML = '<iframe src="https://www.youtube.com/embed/fnTA_AGkdF0?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>  '
-
-}, 500)
 
 const burgerOpen = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.header__menu');
@@ -156,6 +152,15 @@ document.querySelectorAll('a[href^="#"').forEach((link) => {
     });
   });
 });
+
+
+
+window.addEventListener('scroll', function () {
+  if(document.querySelector('.video img') !== null) document.querySelector('.video').innerHTML = '<iframe src="https://www.youtube.com/embed/fnTA_AGkdF0?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>  '
+
+
+});
+
 
 const acc = document?.getElementsByClassName("accordion");
 
