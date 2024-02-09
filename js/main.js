@@ -31,8 +31,8 @@ const swiperCompanies = new Swiper(".swiper-companies", {
   }
 });
 const swiperFeedback = new Swiper(".swiper-feedback", {
-  slidesPerView: 3,
-  spaceBetween: 40,
+  slidesPerView: 1.1,
+  spaceBetween: 14,
 
   navigation: {
     nextEl: ".swiper-button-next.feedback",
@@ -46,6 +46,14 @@ const swiperFeedback = new Swiper(".swiper-feedback", {
   autoplay: {
     delay: 6000,
   },
+  breakpoints: {
+    769: {
+    
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    
+  }
 });
 
 
