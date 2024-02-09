@@ -204,6 +204,7 @@ input:focus {
   margin-top: 79px;
 }
 
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -266,7 +267,8 @@ input:focus {
 .welcome {
   position: relative;
   padding-top: 108px;
-  overflow-y: hidden;
+  overflow: hidden;
+  
 }
 
 .welcome__back-img {
@@ -343,10 +345,10 @@ input:focus {
   gap: 15px;
   line-height: 120%;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 8px;
-  background: #f8f8f8;
-  padding: 7.4px 60px 7.4px 19px;
+
+  padding: 7.4px 10px 7.4px 10px;
 }
 
 .welcome__descr-list {
@@ -376,7 +378,13 @@ input:focus {
 }
 
 .logos {
-  margin: 21px 0px 0px;
+  margin-top: 43px;
+}
+
+.logos__list{
+  display: flex;
+  width: 105.5%;
+  justify-content: space-between;
 }
 
 .swiper-logos .swiper-slide {
@@ -384,7 +392,7 @@ input:focus {
 }
 
 .video {
-  padding-top: 73px;
+  padding-top: 43px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,7 +413,7 @@ input:focus {
 }
 
 .features {
-  margin: 60px 0px;
+  margin: 30px 0px 60px;
   padding: 60px 0px;
 }
 
@@ -609,8 +617,8 @@ input:focus {
 }
 
 .numbers .welcome__btn-link {
-  max-width: 360px;
-  background: #25262b;
+  max-width: 214px;
+
   color: #fff;
 }
 

@@ -108,7 +108,7 @@ popupCloseBtn.addEventListener('click', ()=>{
 
 
 setTimeout(()=>{
-  document.querySelector('.video').innerHTML = '<iframe  width="560" height="315" src="https://www.youtube.com/embed/fnTA_AGkdF0?si=omdNOLsbazEjLvAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+  document.querySelector('.video').innerHTML = '<iframe src="https://www.youtube.com/embed/fnTA_AGkdF0?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>  '
 
 }, 500)
 
