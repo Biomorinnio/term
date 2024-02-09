@@ -1763,8 +1763,11 @@ font-size: 26px;
   max-width: unset;
 }
 #popup{
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
+}
+.popup__form-btn{
+  font-weight: 700;
 }
 .popup__title{
   min-width: 294px;
