@@ -400,16 +400,17 @@ input:focus {
 }
 
 .video__img {
-  width: min-content;
+  width: 106%;
   cursor: pointer;
 }
 
 .video iframe {
   height: 610px;
-  width: 1340px;
+  width: 1230px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+
 }
 
 .features {
@@ -859,7 +860,9 @@ input:focus {
 
 .swiper-feedback__img {
   width: 100%;
-  height: 550px;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .tariffs {
@@ -1456,10 +1459,18 @@ address {
 .video{
   padding-top: 23px;
 }
+.video .container{
+  max-width: unset;
+  margin-left: unset;
+  margin-right: unset;
+  padding: 0;
+  width: 100%;
+}
 .video img{
   width: 100%;
   height: 205px;
   padding: 0 10px;
+
 }
 .video iframe{
   width: 100%;
@@ -1889,7 +1900,7 @@ font-size: 26px;
     padding-right: 10px !important;
   }
   .swiper-feedback__img{
-    height: 412px;
+    height: 100%;
   }
   .feedback__btns.mobile{
     display: flex !important;

@@ -164,7 +164,7 @@ document.querySelectorAll('a[href^="#"').forEach((link) => {
 
 
 window.addEventListener('scroll', function () {
-  if(document.querySelector('.video img') !== null) document.querySelector('.video').innerHTML = '<iframe src="https://www.youtube.com/embed/fnTA_AGkdF0?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>  '
+  if(document.querySelector('.video img') !== null) document.querySelector('.video .container').innerHTML = '<iframe src="https://www.youtube.com/embed/fnTA_AGkdF0?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>  '
 
 
 });
